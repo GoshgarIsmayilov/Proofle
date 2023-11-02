@@ -1,0 +1,11 @@
+{
+  "name": "api.js",
+  "version": "1.0.0",
+  "main": "api.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pg": "^8.11.3",
+    "zokrates-js": "^1.1.4"
+  }
+}
