@@ -65,7 +65,7 @@ The transaction hashes can be traced on ```https://testnet.snowtrace.io```:
 | --------------- | ---------------- | ---------------- | --------------- |
 | 57,837          | 22.6 MB          | 1.9 KB           | 997 B           |
 
-<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof.png" width="60%"/>
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof.png" width="70%"/>
 
 ## Zero-Knowledge Proof Generation/Verification Times
 
@@ -94,7 +94,7 @@ The transaction hashes can be traced on ```https://testnet.snowtrace.io```:
 
 The zero-knowledge proofs are verified on-chain, without requiring any time cost. Note that the outliers are excluded in the figure.
 
-<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof_generation_times.png" width="60%"/>
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof_generation_times.png" width="70%"/>
 
 ## Server Response Times
 
