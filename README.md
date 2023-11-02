@@ -25,6 +25,8 @@ Our application needs all its layers to be running.
 7. Interact with Web UI to create entries for two users within their preferences.
 8. API server will find the match and trigger ZKP layer to generate the corresponding proof.
 
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/architecture.png" width="100%"/>
+
 # Experimental Study 
 
 ## Blockchain Gas Consumption 
@@ -63,6 +65,8 @@ The transaction hashes can be traced on ```https://testnet.snowtrace.io```:
 | --------------- | ---------------- | ---------------- | --------------- |
 | 57,837          | 22.6 MB          | 1.9 KB           | 997 B           |
 
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof.png" width="60%"/>
+
 ## Zero-Knowledge Proof Generation/Verification Times
 
 | Run             | Generation Time (sec) | 
@@ -88,7 +92,9 @@ The transaction hashes can be traced on ```https://testnet.snowtrace.io```:
 | 18              | 7.966                 |  
 | 19              | 8.158                 |  
 
-The zero-knowledge proofs are verified on-chain, without requiring any time cost.
+The zero-knowledge proofs are verified on-chain, without requiring any time cost. Note that the outliers are excluded in the figure.
+
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/proof_generation_times.png" width="60%"/>
 
 ## Server Response Times
 
@@ -114,6 +120,10 @@ The zero-knowledge proofs are verified on-chain, without requiring any time cost
 | 17              | 3.298             | 0.012             | 7.972             |
 | 18              | 3.317             | 0.009             | 7.949             |
 | 19              | 3.279             | 0.009             | 7.920             |
+
+Note that the outliers are excluded in the figure.
+
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/server_response_times.png" width="60%"/>
 
 # Some Maths
 
