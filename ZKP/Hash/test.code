@@ -1,0 +1,8 @@
+import "hashes/sha256/512bit" as sha256;
+import "utils/pack/u32/pack256" as pack256;
+
+def main(private u32[8] a, private u32[8] b) -> field {
+    u32[8] h1 = sha256(a, b);
+    field h2 = pack256(h1);
+    return h2;
+}

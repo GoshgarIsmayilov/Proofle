@@ -1,0 +1,19 @@
+import "hashes/sha256/512bit" as sha256;
+import "utils/pack/u32/pack256" as pack256;
+
+def main(private u32[8] mins, private u32[8] maxs, private u32[8] values, public field hMinMax, public field hValues) -> field {
+    u32[8] cMinMaxUnpacked = sha256(mins, maxs);
+    field cMinMax = pack256(cMinMaxUnpacked);
+
+    u32[8] cValuesUnpacked = sha256(values, values);
+    field cValues = pack256(cValuesUnpacked);
+
+    for u32 i in 0..7 {
+        assert(mins[i] <= values[i]);
+        assert(values[i] <= maxs[i]);
+    }
+	
+    field result = (cMinMax == hMinMax && cValues == hValues) ? 1 : 0;
+
+    return result;
+}
