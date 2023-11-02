@@ -17,11 +17,11 @@ response times. The experimental results justify the correctness and the applica
 Our application needs all its layers to be running.
 
 1. Install and configure Metamask extension on browser for Avalanche Fuji Testnet.
-2. Deploy Proofle contract to blockchain. (Blockchain layer completed...)
+2. Deploy Proofle and verifier contracts (/Blockchain) to blockchain. (Blockchain layer completed...)
 3. Run Web UI (/WebUI) with ```node server.js``` on port 3300.
 4. Open Web UI on browser with ```http://localhost:3300/```. (Web UI layer completed...)
-5. Update ```api.js``` (/API) with the latest contract address and run with ```node api.js``` on port 3000. (API server and ZKP layers completed...)
-6. Start PostgreSQL database (/DB) on port 3306. (Database layer completed...)
+5. Update ```api.js``` (/Server) with the latest contract address and run with ```node api.js``` on port 3000. (API server and ZKP layers completed...)
+6. Start PostgreSQL database (/Database) on port 3306. (Database layer completed...)
 7. Interact with Web UI to create entries for two users within their preferences.
 8. API server will find the match and trigger ZKP layer to generate the corresponding proof.
 
