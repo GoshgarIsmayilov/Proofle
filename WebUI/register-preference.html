@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proofle | Zero-Knowledge in Mind, Infinite Love in Heart </title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script charset="utf-8" src="https://cdn.ethers.io/scripts/ethers-v4.min.js" type="text/javascript"></script>
+    <script src="./register-preference.js"></script>
+    <script src="dist/bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+      <a href="index.html"><div class="app">proofle</div></a>
+
+      <p>
+        <select name="your-gender" id="your-gender" class="input-field-flux" style="width: 265px;" required></select>
+        <script>
+          var yourGender = document.getElementById("your-gender");
+          var option = document.createElement("option");
+          option.text = "Preferred Gender";
+          yourGender.appendChild(option);
+  
+          option = document.createElement("option");
+          option.text = "Male";
+          option.value = 0;
+          yourGender.appendChild(option);
+  
+          option = document.createElement("option");
+          option.text = "Female";
+          option.value = 1;
+          yourGender.appendChild(option);
+        </script>
+        </p>
+
+      <p>
+      <select name="min-your-age" id="min-your-age" class="input-field-flux" style="width: 265px;" required></select>
+      <script>
+        var minYourAge = document.getElementById("min-your-age");
+        var option = document.createElement("option");
+        option.text = "Min. Preferred Age";
+        minYourAge.appendChild(option);
+        for (var i = 18; i <= 60; i++) {
+          var option = document.createElement("option");
+          option.value = i;
+          option.text = i + " years";
+          minYourAge.appendChild(option);
+        }
+      </script>
+      <select name="max-your-age" id="max-your-age" class="input-field-flux" style="width: 265px;" required></select>
+      <script>
+        var maxYourAge = document.getElementById("max-your-age");
+        option.text = "Max. Preferred Age";
+        maxYourAge.appendChild(option);
+        for (var i = 18; i <= 60; i++) {
+          var option = document.createElement("option");
+          option.value = i;
+          option.text = i + " years";
+          maxYourAge.appendChild(option);
+        }
+      </script>
+      </p>
+
+      <p>
+        <select name="min-your-salary" id="min-your-salary" class="input-field-flux" style="width: 265px;" required></select>
+        <script>
+          var minYourSalary = document.getElementById("min-your-salary");
+          option.value = 10000;
+          option.text = "Min. Preferred Salary";
+          minYourSalary.appendChild(option);
+          for (var i = 0; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.value = 10 * 1000 *  i;
+            option.text = 10 * i + ".000 TL";
+            minYourSalary.appendChild(option);
+          }
+          for (var i = 3; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.value = 50 * 1000 *  i;
+            option.text = 50 * i + ".000 TL";
+            minYourSalary.appendChild(option);
+          }
+          for (var i = 6; i <= 11; i++) {
+            var option = document.createElement("option");
+            option.value = 100 * 1000 *  i;
+            option.text = 100 * i + ".000 TL";
+            minYourSalary.appendChild(option);
+          }
+        </script>
+        <select name="max-your-salary" id="max-your-salary" class="input-field-flux" style="width: 265px;" required></select>
+        <script>
+          var maxYourSalary = document.getElementById("max-your-salary");
+          option.value = 10000;
+          option.text = "Max. Preferred Salary";
+          maxYourSalary.appendChild(option);
+          for (var i = 0; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.value = 10 * 1000 *  i;
+            option.text = 10 * i + ".000 TL";
+            maxYourSalary.appendChild(option);
+          }
+          for (var i = 3; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.value = 50 * 1000 *  i;
+            option.text = 50 * i + ".000 TL";
+            maxYourSalary.appendChild(option);
+          }
+          for (var i = 6; i <= 10; i++) {
+            var option = document.createElement("option");
+            option.value = 100 * 1000 *  i;
+            option.text = 100 * i + ".000 TL";
+            maxYourSalary.appendChild(option);
+          }
+        </script>
+        </p>
+
+        <p>
+          <select name="min-your-height" id="min-your-height" class="input-field-flux" style="width: 265px;" required></select>
+          <script>
+            var minYourHeight = document.getElementById("min-your-height");
+            option.text = "Min. Preferred Height";
+            minYourHeight.appendChild(option);
+            for (var i = 140; i <= 201; i++) {
+              var option = document.createElement("option");
+              option.value = i;
+              option.text = i + " cm";
+              minYourHeight.appendChild(option);
+            }
+          </script>
+          <select name="max-your-height" id="max-your-height" class="input-field-flux" style="width: 265px;" required></select>
+          <script>
+            var maxYourHeight = document.getElementById("max-your-height");
+            option.text = "Max. Preferred Height";
+            maxYourHeight.appendChild(option);
+            for (var i = 140; i <= 200; i++) {
+              var option = document.createElement("option");
+              option.value = i;
+              option.text = i + " cm";
+              maxYourHeight.appendChild(option);
+            }
+          </script>
+          </p>
+
+          <p>
+            <select name="max-your-distance" id="max-your-distance" class="input-field-flux" style="width: 265px;" required></select>
+            <script>
+              var maxYourDistance = document.getElementById("max-your-distance");
+              option.text = "Max. Preferred Distance";
+              maxYourDistance.appendChild(option);
+              for (var i = 0; i <= 10; i++) {
+                var option = document.createElement("option");
+                option.value = i * 5;
+                option.text = i * 5 + " km";
+                maxYourDistance.appendChild(option);
+              }
+            </script>
+            </p>
+
+      <a class="a" href="login.html" onclick="return register_preference(event);">Register</a>
+    </div>
+</body>
+</html>

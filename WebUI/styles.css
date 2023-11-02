@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+
+  .container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .container-left {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 3vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+  }
+  
+  .flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 3vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+  }
+
+  .app {
+    font-family: 'Exo 2', sans-serif;
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    left: 30px;
+    color: #e079e2;
+    font-size: 40px;
+    text-shadow: 0 0 3vw #e079e2;
+  }
+  
+  .neon {
+    animation: neon 60s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+  }
+  
+  .flux {
+    animation: flux 60s linear infinite;
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+  }
+
+  .app {
+    animation: app 60s linear infinite;
+  }
+  
+  @keyframes app {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #f03df3, 0 0 3vw #f03df3, 0 0 10vw #f03df3, 0 0 10vw #f03df3, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #e079e2;
+    }
+  }
+
+.a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 160px;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+    padding: 30px;
+    margin: 70px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    animation: flicker 2s infinite;
+    --neon-border-color: #e079e2;     
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #e079e2,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+  .a:hover {
+    box-shadow:
+        0 0 50rem #fff,
+        inset 0 0 5rem #fff,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+
+  .a-profile {
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: flicker 2s infinite;
+    object-fit: cover;
+    --neon-border-color: #fff;    
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #fff,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+
+  .a-verify {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 240px;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+    padding: 30px;
+    margin: 70px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    animation: flicker 2s infinite;
+    --neon-border-color: #e079e2;     
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #e079e2,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+  .a-verify:hover {
+    box-shadow:
+        0 0 50rem #fff,
+        inset 0 0 5rem #2dfa16,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+
+  .a-like {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 240px;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+    padding: 30px;
+    margin: 70px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    animation: flicker 2s infinite;
+    --neon-border-color: #e079e2;     
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #e079e2,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+  .a-like:hover {
+    box-shadow:
+        0 0 50rem #fff,
+        inset 0 0 5rem #1041FF,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+  .a-dislike {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 240px;
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+    padding: 30px;
+    margin: 70px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    animation: flicker 2s infinite;
+    --neon-border-color: #e079e2;     
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #e079e2,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+  .a-dislike:hover {
+    box-shadow:
+        0 0 50rem #fff,
+        inset 0 0 5rem #FA1C16,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);  
+  }
+  
+.input-field-neon {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    width: 400px;
+    border: 1px solid #fff; 
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    animation: flicker 2s infinite;
+    --neon-border-color: #FA1C16;
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #FED128,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color); 
+}
+
+.input-field-flux {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    width: 400px;
+    border: 1px solid #fff; 
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    animation: flicker 2s infinite;
+    --neon-border-color: #2356FF;   
+
+    box-shadow:
+        0 0 5rem #fff,
+        inset 0 0 0.5rem #28D7FE,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color); 
+}
+
+.input-field-neon::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.input-field-flux::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.input-field-invisible {
+    padding: 15px;
+    border: 1px;
+    margin: 5px;
+    visibility: hidden;  
+}
