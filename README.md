@@ -171,6 +171,16 @@ $$
 
 where $b^{ii'}$ is the resulting Boolean variable of the zero-knowledge proof verification function $ZkpVfy$ and $vk$ is the verification key.
 
+# WebUI Visualization
+
+Starter...   Registration-Photo...   Registration-Profile...
+
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/starter.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-image.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-profile.png" width="30%"/>
+
+Registration-Preference...   Login...   Swipe...
+
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-preference.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/login.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/swipe.png" width="30%"/>
+
 # Publications to Read
 
 1. Shafi Goldwasser, Silvio Micali, and Chales Rackoff. The knowledge complexity of interactive proof-systems. SIAM Journal on Computing, 18(1):186–208, 1989.
