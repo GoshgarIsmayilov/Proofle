@@ -1,1 +1,1 @@
-/Users/Shared/DBngin/postgresql/15.1/bin/postgres "-D" "/Users/goshgar/Desktop/PPDA/DB" "-p" "3306"
+/Users/Shared/DBngin/postgresql/15.1/bin/postgres "-D" "/Users/goshgar/Desktop/Proofle/DB" "-p" "3306"

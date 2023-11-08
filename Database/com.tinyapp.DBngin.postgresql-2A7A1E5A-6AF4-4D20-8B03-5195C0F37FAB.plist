@@ -1,0 +1,26 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+  <dict>
+    <key>KeepAlive</key>
+    <true/>
+    <key>Label</key>
+    <string>com.tinyapp.DBngin.postgresql-2A7A1E5A-6AF4-4D20-8B03-5195C0F37FAB</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/Shared/DBngin/postgresql/15.1/bin/postgres</string>
+      <string>-D</string>
+      <string>/Users/goshgar/Desktop/Proofle/DB</string>
+      <string>-p</string>
+      <string>3306</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>WorkingDirectory</key>
+    <string>/Users/Shared/DBngin/postgresql/15.1</string>
+    <key>StandardOutPath</key>
+    <string>/Users/goshgar/Desktop/Proofle/DB/postgres_out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/goshgar/Desktop/Proofle/DB/postgres_err.log</string>
+  </dict>
+  </plist>
