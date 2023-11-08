@@ -189,3 +189,7 @@ Registration-Preference...   Login...   Swipe...
 4. Jens Groth. On the size of pairing-based non-interactive arguments. In Advances in Cryptology: 35th Annual International Conference on the Theory and Applications of Cryptographic Techniques, pages 305–326. Springer, 2016.
 5. Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. Succinct {Non-Interactive} zero knowledge for a von neumann architecture. In 23rd USENIX Security Symposium (USENIX Security 14), pages 781–796, 2014.
 6. Bryan Parno, Jon Howell, Craig Gentry, and Mariana Raykova. Pinocchio: Nearly practical verifiable computation. Communications of the ACM, 59(2):103–112, 2016.
+
+# Disclaimer
+
+This software is made available for educational purposes only.
