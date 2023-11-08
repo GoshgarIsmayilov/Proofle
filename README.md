@@ -175,7 +175,7 @@ where $b^{ii'}$ is the resulting Boolean variable of the zero-knowledge proof ve
 
 Starter...   Registration-Photo...   Registration-Profile...
 
-<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/starter.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-image.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-profile.png" width="30%"/>
+<img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/starter.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-photo.png" width="30%"/> <img src="https://github.com/GoshgarIsmayilov/Proofle/blob/main/Auxiliary/registration-profile.png" width="30%"/>
 
 Registration-Preference...   Login...   Swipe...
 
